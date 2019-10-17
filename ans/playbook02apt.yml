@@ -1,0 +1,14 @@
+---
+- name: Learning about apt
+  hosts: planetexpress
+  gather_facts: yes
+
+
+  tasks:
+          - name: install steamlocomotive
+            apt:
+                    name: python3-pip
+                    state: present
+            become: yes
+
+

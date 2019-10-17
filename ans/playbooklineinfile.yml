@@ -1,0 +1,12 @@
+---
+- name: learning about block and rescue
+  hosts: localhost
+  gather_facts: yes
+
+  tasks:
+                    - name: back out maintenance step1
+                      lineinfile:
+                        path: ~/example.txt
+                        state: absent
+                        line: "maintenance step 3"
+

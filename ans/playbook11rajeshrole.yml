@@ -1,0 +1,7 @@
+---
+- name: Find files and fetch them back to controller
+  gather_facts: yes
+  hosts: planetexpress
+
+  roles:
+          - rajesh.findafile
